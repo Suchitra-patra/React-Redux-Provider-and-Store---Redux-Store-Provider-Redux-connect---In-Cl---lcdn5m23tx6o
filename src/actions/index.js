@@ -1,13 +1,30 @@
-export const incNumber=(num)=>{
+export const addNumber=()=>{
     return{
-        type:"INCREMENT",
-        payload:num
+        type: 'INCREMENT'
     }
 }
 
-export const decNumber=(num)=>{
+export const subNumber=()=>{
     return{
-        type:"DECREMENT",
-        payload:num
+        type: 'DECREMENT'
+    }
+}
+
+export const handlelogin=()=>{
+    return{
+        type: 'SIGN_IN'
+    }
+}
+
+export const handlelogout=()=>{
+    return{
+        type: 'SIGN_OUT'
+    }
+}
+
+export const addAmount=(val)=>{
+    return{
+        type: 'INCREMENTBYAMOUNT',
+        payload: val
     }
 }
